@@ -10,12 +10,12 @@ export default function UserPage() {
 
     // Navega a la pagina edit
     function editPage() {
-        navigate('https://xtralife.onrender.com/edit');
+        navigate('/edit');
     }
 
     // Navega a la pagina delete
     function deletePage() {
-        navigate('https://xtralife.onrender.com/delete');
+        navigate('/delete');
     }
 
     // Estado y funcion para manejar el usuario

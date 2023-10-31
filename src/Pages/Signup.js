@@ -40,7 +40,7 @@ export default function Signup() {
         axios.post('https://xtralife.onrender.com/signup', values)
         .then(res => {
             // Navega a la pagina login una vez enviado los datos.
-            navigate('https://xtralife.onrender.com/login');
+            navigate('/login');
         })
         .catch(err => console.log(err))
         }

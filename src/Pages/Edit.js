@@ -40,7 +40,7 @@ export default function Edit() {
         axios.post('https://xtralife.onrender.com/edit', values)
         .then(res => {
             // Navega a la pagina home una vez enviado los datos.
-            navigate('https://xtralife.onrender.com/');
+            navigate('/');
         })
         .catch(err => console.log(err))
         }

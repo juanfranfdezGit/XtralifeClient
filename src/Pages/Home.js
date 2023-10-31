@@ -10,7 +10,7 @@ export default function Home() {
 
     // Funcion para navegar a la pagina product
     const producto = () => {
-        navigate('https://xtralife.onrender.com/product')
+        navigate('/product')
     }
 
     // Estado 'products' y función 'setProducts' para gestionar una lista de productos.

@@ -15,28 +15,28 @@ export default function Links() {
         <BrowserRouter>
             <Routes>
                 {/* Ruta Home */}
-                <Route path="https://xtralife.onrender.com/" element={<Home/>}></Route>
+                <Route path="/" element={<Home/>}></Route>
 
                 {/* Ruta de cada producto */}
-                <Route path="https://xtralife.onrender.com/product" element={<Product/>}></Route>
+                <Route path="/product" element={<Product/>}></Route>
 
                 {/* Ruta para el carrito */}
-                <Route path="https://xtralife.onrender.com/carrito" element={<Cart/>}></Route>
+                <Route path="/carrito" element={<Cart/>}></Route>
 
                 {/* Ruta para el login */}
-                <Route path="https://xtralife.onrender.com/login" element={<Login/>}></Route>
+                <Route path="/login" element={<Login/>}></Route>
 
                 {/* Ruta para ver lo datos de usuario */}
-                <Route path="https://xtralife.onrender.com/userPage" element={<UserPage/>}></Route>
+                <Route path="/userPage" element={<UserPage/>}></Route>
 
                 {/* Ruta para el registro */}
-                <Route path="https://xtralife.onrender.com/signup" element={<Signup/>}></Route>
+                <Route path="/signup" element={<Signup/>}></Route>
 
                 {/* Ruta para la edicion de nuestros datos */}
-                <Route path="https://xtralife.onrender.com/edit" element={<Edit/>}></Route>
+                <Route path="/edit" element={<Edit/>}></Route>
 
                 {/* Ruta para eliminar un usuario */}
-                <Route path="https://xtralife.onrender.com/delete" element={<Delete/>}></Route>
+                <Route path="/delete" element={<Delete/>}></Route>
             </Routes>
         </BrowserRouter>
     )
