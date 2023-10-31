@@ -37,10 +37,10 @@ export default function Edit() {
 
         // Si no hay errores en la validacion, envia los datos al servidor.
         if (err.email === "" && err.password === "" && err.name === "" && err.lastName === "" && err.dni === "" && err.address === "") {
-        axios.post('http://localhost:3001/edit', values)
+        axios.post('https://xtralife.onrender.com/edit', values)
         .then(res => {
             // Navega a la pagina home una vez enviado los datos.
-            navigate('/');
+            navigate('https://xtralife.onrender.com/');
         })
         .catch(err => console.log(err))
         }

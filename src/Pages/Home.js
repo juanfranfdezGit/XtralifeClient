@@ -10,7 +10,7 @@ export default function Home() {
 
     // Funcion para navegar a la pagina product
     const producto = () => {
-        navigate('/product')
+        navigate('https://xtralife.onrender.com/product')
     }
 
     // Estado 'products' y función 'setProducts' para gestionar una lista de productos.
@@ -18,7 +18,7 @@ export default function Home() {
 
     // Funcion para recoger los productos de nuestra base de datos
     const getProducts = async () => {
-        const { data } = await axios.get('http://localhost:3001/')
+        const { data } = await axios.get('https://xtralife.onrender.com/')
 
         setProducts(data);
     }

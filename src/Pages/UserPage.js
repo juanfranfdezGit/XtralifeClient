@@ -10,12 +10,12 @@ export default function UserPage() {
 
     // Navega a la pagina edit
     function editPage() {
-        navigate('/edit');
+        navigate('https://xtralife.onrender.com/edit');
     }
 
     // Navega a la pagina delete
     function deletePage() {
-        navigate('/delete');
+        navigate('https://xtralife.onrender.com/delete');
     }
 
     // Estado y funcion para manejar el usuario
@@ -23,7 +23,7 @@ export default function UserPage() {
 
     // Recoge datos de nuestra base de datos
     const getUser = async () => {
-        const data = await axios.get('http://localhost:3001/userPage')
+        const data = await axios.get('https://xtralife.onrender.com/userPage')
 
         setUser(data.data);
         console.log(data.data)

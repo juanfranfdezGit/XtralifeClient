@@ -14,17 +14,17 @@ export default function Navbar() {
 
     // Navega a la home
     const home = () => {
-        navigate('/');
+        navigate('https://xtralife.onrender.com/');
     }
 
     // Navega al carrito
     const cart = () => {
-        navigate('/carrito');
+        navigate('https://xtralife.onrender.com/carrito');
     }
 
     // Navega a la pagina de login
     const login = () => {
-        navigate('/login');
+        navigate('https://xtralife.onrender.com/login');
     }
 
     // Gestiona el estado del slider para cuando nos encontremos en dispositivos moviles
