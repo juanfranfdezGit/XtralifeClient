@@ -37,7 +37,7 @@ export default function Signup() {
 
         // Si no hay errores en la validacion, envia los datos al servidor.
         if (err.email === "" && err.password === "" && err.name === "" && err.lastName === "" && err.dni === "" && err.address === "") {
-        axios.post('/signup', values)
+        axios.post('https://xtralife.onrender.com/signup', values)
         .then(res => {
             // Navega a la pagina login una vez enviado los datos.
             navigate('/login');

@@ -18,7 +18,7 @@ export default function Home() {
 
     // Funcion para recoger los productos de nuestra base de datos
     const getProducts = async () => {
-        const { data } = await axios.get('/')
+        const { data } = await axios.get('https://xtralife.onrender.com/')
 
         setProducts(data);
     }

@@ -9,7 +9,7 @@ export default function UserPage() {
 
     // Elimina un usuario de nuestra base de datos y tras ello nos enlaza con la pagina Home
     function handleDelete() {
-        axios.post('/delete')
+        axios.post('https://xtralife.onrender.com/delete')
         .then(navigate('/'))
         .catch(err => console.log(err))
     }

@@ -15,7 +15,7 @@ export default function UserPage() {
 
     // Navega a la pagina delete
     function deletePage() {
-        navigate('/delete');
+        navigate('https://xtralife.onrender.com/delete');
     }
 
     // Estado y funcion para manejar el usuario
