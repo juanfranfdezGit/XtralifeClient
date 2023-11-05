@@ -23,7 +23,7 @@ export default function UserPage() {
 
     // Recoge datos de nuestra base de datos
     const getUser = async () => {
-        const data = await axios.get('/userPage')
+        const data = await axios.get('https://xtralife-server.onrender.com/userPage')
 
         setUser(data.data);
         console.log(data.data)
