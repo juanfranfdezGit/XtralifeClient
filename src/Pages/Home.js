@@ -20,7 +20,7 @@ export default function Home() {
     const getProducts = async () => {
         const { data } = await axios.get('https://xtralife-server.onrender.com/')
 
-        setProducts(data);
+        await setProducts(data);
     }
 
     // Ejecuta la funcion una vez montado el componente
