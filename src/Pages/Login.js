@@ -17,7 +17,7 @@ export default function Login() {
     function handleSubmit(event) {
         event.preventDefault();
 
-        axios.post('https://xtralife.onrender.com/login', {email, password})
+        axios.post('/login', {email, password})
         .then(res => setStatus(res.data))
         .catch(err => console.log(err))
     }
