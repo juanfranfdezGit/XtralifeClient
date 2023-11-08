@@ -14,17 +14,17 @@ export default function Navbar() {
 
     // Navega a la home
     const home = () => {
-        navigate('/');
+        navigate("/");
     }
 
     // Navega al carrito
     const cart = () => {
-        navigate('/carrito');
+        navigate("/carrito");
     }
 
     // Navega a la pagina de login
     const login = () => {
-        navigate('/login');
+        navigate("/login");
     }
 
     // Gestiona el estado del slider para cuando nos encontremos en dispositivos moviles
