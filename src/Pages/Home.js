@@ -15,12 +15,14 @@ export default function Home() {
 
     // Estado 'products' y función 'setProducts' para gestionar una lista de productos.
     const [products, setProducts] = useState([])
-    
+    console.log("hola")
+
     // Funcion para recoger los productos de nuestra base de datos
     const getProducts = async () => {
         const { data } = await axios.get('https://xtralife-server.onrender.com/')
 
         setProducts(data);
+        console.log(data)
     }
 
     // Ejecuta la funcion una vez montado el componente
