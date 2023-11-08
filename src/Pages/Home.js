@@ -19,14 +19,16 @@ export default function Home() {
 
     // Funcion para recoger los productos de nuestra base de datos
     const getProducts = async () => {
-        const { data } = await axios.get('https://xtralife-server.onrender.com/')
-
-        setProducts(data);
-        console.log(data)
+        try {
+            const response = await axios.get('https://xtralife-server.onrender.com/');
+            setProducts(response.data);
+        } catch (error) {
+            console.error("Error al obtener los datos del servidor:", error);
+        }
     }
 
     // Ejecuta la funcion una vez montado el componente
-    useEffect(() => getProducts, []);
+    useEffect(() => getProducts(), []);
 
     return (
         <div className="HomeScreen">
